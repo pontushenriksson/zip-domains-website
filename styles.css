@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+:root {
+  --primary-color: #f71735;
+  --secondary-color: #45cb85;
+  --tertiary-color: #92e89d;
+  --quaternary-color: #b9e6ff;
+  --background-color: #153131;
+  --font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--quaternary-color);
+  font-family: var(--font-family);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+table {
+  background-color: var(--secondary-color);
+  color: var(--quaternary-color);
+  margin: 10px 0;
+  border-collapse: collapse;
+  width: 95%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+th,
+td {
+  border: 1px solid var(--background-color);
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: var(--tertiary-color);
+  color: var(--background-color);
+}
+
+td {
+  background-color: var(--quaternary-color);
+  color: var(--background-color);
+}
+
+button.load-more {
+  margin: 20px auto;
+  display: block;
+  padding: 10px;
+  background-color: var(--quaternary-color);
+  border: none;
+  color: var(--background-color);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.load-more:hover {
+  background-color: var(--tertiary-color);
+}
+
+header,
+footer {
+  padding: 20px;
+  text-align: center;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+input {
+  padding: 10px;
+  margin-right: 20px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 20px;
+  color: var(--background-color);
+  width: 60%;
+}
+
+button {
+  width: 150px;
+  height: 40px;
+  border: none;
+  background-color: var(--secondary-color);
+  color: var(--quaternary-color);
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button i {
+  padding-right: 20px;
+}
+
+button i.fa-search {
+  padding-right: 0px;
+}
+
+button.website-button,
+button.report-button {
+  width: auto; /* takes up only as much width as needed */
+  display: inline-flex; /* inline so that it doesn't take the entire row's width */
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+#buttonGroup {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+}
+
+.socials a {
+  color: var(--quaternary-color);
+  margin: 30px 30px;
+  font-size: 24px;
+}
+
+footer p {
+  margin-bottom: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .socials {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4); /* overlay effect */
+}
+
+.modal-content {
+  background-color: var(--quaternary-color);
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid var(--tertiary-color);
+  width: 80%; /* Could be more or less, depending on screen size */
+  color: var(--background-color);
+}
+
+.modal-content button {
+  padding: 10px 20px;
+  margin: 10px 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+#cancel-button {
+  color: var(--quaternary-color);
+  background-color: var(--secondary-color);
+}
+
+#proceed-button {
+  color: var(--quaternary-color);
+  background-color: var(--primary-color);
+}
+
+footer a {
+  color: var(--secondary-color);
+}

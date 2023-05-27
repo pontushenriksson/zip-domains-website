@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zip domain search | Pontus Henriksson</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/7799275d96.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Enter a url" />
+        <button id="search-button"><i class="fas fa-search"></i></button>
+      </div>
+      <button id="clear-button" style="display: none">Clear Search</button>
+      <div id="main-container"></div>
+      <div class="socials">
+        <a href="https://github.com/pontushenriksson" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a href="https://instagram.com/pontushenrikssn" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+      </div>
+    </header>
+    <main>
+      <!-- Fetched .zip domain info will be appended here by JavaScript -->
+      <div id="data-container">
+        <!-- Each piece of data will have its own table and button container -->
+      </div>
+    </main>
+    <button class="load-more">Load More Domains</button>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <h2>Warning</h2>
+        <p>
+          .zip domains might be risky and they might be dangerous. Are you sure
+          you want to proceed?
+        </p>
+        <button id="cancel-button" onclick="closeModal()">
+          Nevermind, I'll stay here
+        </button>
+        <a id="visit-link" href=""
+          ><button id="proceed-button">Visit anyway</button></a
+        >
+      </div>
+    </div>
+    <footer>
+      <a href="pontushenriksson.github.io" target="_blank"
+        >&copy; 2023 Pontus Henriksson</a
+      >
+    </footer>
+  </body>
+</html>
