@@ -8,7 +8,7 @@ let vw = Math.max(
 );
 
 // Fetch and parse data
-fetch('https://raw.githubusercontent.com/trickest/zip/main/zip-domains.csv')
+fetch('https://raw.githubusercontent.com/zzhsec/zip/main/zip-domains.csv')
   .then(response => response.text())
   .then(data => {
     totalData = parseCsv(data);
